@@ -2,8 +2,10 @@
 - [X] Init Project
 - [X] Init bootstrap and sass
 - [ ] Create mockup of design
-    - [ ] Header
-    - [ ] Footer
+    - [X] Header
+    - [X] Footer
     - [ ] Content
+    - [ ] Mobile side nav
+    - [ ] Looks good responsive
 - [ ] Init Hugo
 - [ ] Deploy to S3 and Cloudfront
