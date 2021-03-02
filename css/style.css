@@ -9954,8 +9954,59 @@ header > nav .nav-item .nav-link:hover {
   height: 1000px;
 }
 
-body > .container {
+footer {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(#3f3943, #14091a);
+  color: #969497;
+}
+footer .container {
+  margin-bottom: 30px;
+}
+footer .container .free-trial-btn {
+  color: #fff;
+  background-color: #3f3943;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 1px solid #969497;
+  border-radius: 2px;
+}
+footer .container .h6 {
+  color: #969497;
+}
+footer .container .col-sm-6 {
+  padding: 3px 0;
+}
+footer .container .footer-nav-links {
+  border-top: 1px solid #969497;
+  color: #969497;
+}
+footer .container .footer-nav-links ul {
+  font-size: 0.875em;
+}
+footer .container .footer-nav-links ul > li > a {
+  color: #969497;
+}
+footer .terms-links {
+  text-align: center;
+  color: #fff;
+}
+footer .terms-links > a {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.container {
   max-width: 100%;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
