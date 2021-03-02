@@ -9929,8 +9929,33 @@ h3 {
   }
 }
 header {
-  background-color: blue;
-  color: white;
+  display: inline-block;
+  background-color: #744eef;
+  position: fixed;
+}
+header .dd-logo {
+  padding-left: 1rem;
+}
+header > nav .nav-item:not(:last-child) {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+header > nav .nav-item:last-child {
+  margin-top: 20px;
+}
+header > nav .nav-item .nav-link {
+  color: #fff;
+}
+header > nav .nav-item .nav-link:hover {
+  background-color: #6340d6;
+}
+
+.content {
+  height: 1000px;
+}
+
+body > .container {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
