@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pricing - Datadog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            {{ partial "header.html" . }}
+            <div class="content col-md-9 col-lg-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 title-container mb-3 mb-md-0">
+                            <h1>Modern monitoring & analytics</h1>
+                            <p>See inside any stack, any app, at any scale, anywhere.</p>
+                            <div>
+                                <button>Try Free</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="container pricing-container">
+                                <div class="row">
+                                    <div class="col-sm-4 pricing-detail-container">
+                                        <p>Infrastructure</p>
+                                        <p>Starting at</p>
+                                        <p class="h1">$15</p>
+                                        <p class="disclaimer">Per host, per month*</p>
+                                        <p>Centralize your monitoring of systems and services</p>
+                                        <ul>
+                                            <li>250+ integrations</li>
+                                            <li>Out-of-the-box dashboards</li>
+                                            <li>15-month metric retention</li>
+                                        </ul>
+                                        <a href="#">See Details</a>
+                                    </div>
+                                    <div class="col-sm-4 pricing-detail-container">
+                                        <p>APM</p>
+                                        <p>Starting at</p>
+                                        <p class="h1">$31</p>
+                                        <p class="disclaimer">Per host, per month*</p>
+                                        <p>Centralize your monitoring of systems and services</p>
+                                        <ul>
+                                            <li>Java, Ruby, Python, Go, Node, and more</li>
+                                            <li>Out-of-the-box application health dashboards</li>
+                                            <li>1 million trace events per host included</li>
+                                        </ul>
+                                        <a href="#">See Details</a>
+                                    </div>
+                                    <div class="col-sm-4 pricing-detail-container">
+                                        <p>Loss Management</p>
+                                        <p>Starting at</p>
+                                        <p class="h1">$1.27</p>
+                                        <p class="disclaimer">Per host, per month*</p>
+                                        <p>Analyze and explore log data in context</p>
+                                        <ul>
+                                            <li>Collect from any source</li>
+                                            <li>Automate & custom processing</li>
+                                            <li>Fully integrated with infrastructure and APM</li>
+                                        </ul>
+                                        <a href="#">See Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-columns">
+                        {{ range .Pages }}
+                            {{ range .Pages }}
+                                {{ if (eq .Params.cardType "background-image")}}
+                                    {{ partial "background-image-card.html" . }}
+                                {{ end }}
+
+                                {{ if (eq .Params.cardType "testimonial-card")}}
+                                    {{ partial "testimonial-card.html" . }}
+                                {{ end }}
+
+                                {{ if (eq .Params.cardType "bottom-image-card")}}
+                                    {{ partial "bottom-image-card.html" . }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        {{ partial "footer.html" . }}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "datadogTheme"
+
+[menu]
+    [[menu.main]]
+    identifier = "product"
+    name = "product"
+    url = "#"
+    weight = 1
+    [[menu.main]]
+    identifier = "docs"
+    name = "docs"
+    url = "#"
+    weight = 2
+    [[menu.main]]
+    identifier = "pricing"
+    name = "pricing"
+    url = "#"
+    weight = 3
+    [[menu.main]]
+    identifier = "customers"
+    name = "customers"
+    url = "#"
+    weight = 4
+    [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "#"
+    weight = 5
+    [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    url = "#"
+    weight = 6
+    [[menu.main]]
+    identifier = "login"
+    name = "Login"
+    url = "#"
+    weight = 0
+
+    [[menu.footer]]
+    identifier = "features"
+    name = "Features"
+    url = "#"
+    weight = 0
