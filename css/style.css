@@ -9959,6 +9959,19 @@ header {
   background-color: #744eef;
   position: fixed;
 }
+@media (min-width: 768px) {
+  header {
+    padding-top: 40px;
+  }
+}
+header.header-container {
+  padding-left: 25px;
+}
+@media (min-width: 768px) {
+  header.header-container {
+    max-width: 166px;
+  }
+}
 header .dd-logo {
   padding-left: 1rem;
 }
@@ -9968,17 +9981,28 @@ header .nav-menu {
 @media (min-width: 768px) {
   header .nav-menu {
     display: block;
+    margin-top: 56px;
   }
 }
 header .nav-menu .nav {
   transition: all 0.5 ease;
 }
-header .nav-menu .nav .nav-item:not(:last-child) {
+header .nav-menu .nav .nav-item {
   text-transform: uppercase;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  header .nav-menu .nav .nav-item {
+    margin-bottom: 27px;
+  }
+  header .nav-menu .nav .nav-item:last-child {
+    margin-top: 60px;
+    text-transform: none;
+    font-weight: 400;
+  }
+}
 header .nav-menu .nav .nav-item:last-child {
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
 header .nav-menu .nav .nav-item .nav-link {
   color: #fff;
@@ -9987,10 +10011,18 @@ header .nav-menu .nav .nav-item .nav-link:hover {
   background-color: #6340d6;
 }
 
+.content {
+  padding-top: 40px;
+  padding-left: 30px;
+}
+.content .title-container h1 {
+  font-size: 3em;
+  line-height: 50px;
+  font-weight: 800;
+}
 .content .title-container p {
-  margin-top: 2rem;
-  font-size: 1.5em;
-  font-weight: 400;
+  margin-top: 18px;
+  font-size: 1.75em;
 }
 .content .title-container > div {
   width: 100%;
@@ -10006,9 +10038,9 @@ header .nav-menu .nav .nav-item .nav-link:hover {
   width: 100%;
   color: #744eef;
   background-color: #fff;
-  border: 4px solid #744eef;
+  border: 3px solid #744eef;
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 26px 0;
   font-weight: 600;
   font-size: 1.5em;
 }
@@ -10051,22 +10083,22 @@ header .nav-menu .nav .nav-item .nav-link:hover {
   bottom: 15px;
 }
 .content .pricing-container .pricing-detail-container a:hover {
-  bottom: 3px;
+  text-decoration: none;
 }
 .content .pricing-container .pricing-detail-container p {
-  margin-bottom: 0.75rem;
-  font-weight: 500;
-}
-.content .pricing-container .pricing-detail-container p:not(.h1, .disclaimer) {
-  font-size: 0.9375em;
+  margin-bottom: 18px;
 }
 .content .pricing-container .pricing-detail-container p.disclaimer {
-  font-size: 0.8125em;
+  font-size: 0.875em;
 }
 .content .pricing-container .pricing-detail-container p:first-child {
-  font-size: 0.8125em;
+  font-size: 0.75em;
   text-transform: uppercase;
   font-weight: 600;
+  letter-spacing: 0.342857px;
+}
+.content .pricing-container .pricing-detail-container p:nth-child(2) {
+  margin-bottom: 6px;
 }
 .content .pricing-container .pricing-detail-container:nth-child(1) p:first-child {
   color: #2a2aa7;
@@ -10091,11 +10123,16 @@ header .nav-menu .nav .nav-item .nav-link:hover {
 }
 .content .card-columns {
   column-count: 1;
+  padding-top: 30px;
+  padding-bottom: 100px;
 }
 @media (min-width: 1200px) {
   .content .card-columns {
     column-count: 2;
   }
+}
+.content .card-columns .card {
+  margin-bottom: 30px;
 }
 .content .card-columns .card .card-body {
   background-color: #f5f5f5;
@@ -10119,12 +10156,21 @@ header .nav-menu .nav .nav-item .nav-link:hover {
   padding: 10px;
 }
 .content .card-columns .card .card-body.bottom-img-card-container > a {
-  display: block;
+  display: inline-block;
   color: #724eef;
-  text-decoration: underline;
-  text-decoration-color: #724eef;
   margin-bottom: 97px;
   font-size: 1.125em;
+  text-decoration: underline;
+  text-decoration-color: #724eef;
+  text-underline-offset: 5px;
+}
+.content .card-columns .card .card-body.bottom-img-card-container > .bottom-img-container img:first-child {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .content .card-columns .card .card-body.bottom-img-card-container > .bottom-img-container img:first-child {
+    margin: 0;
+  }
 }
 .content .card-columns .card .card-body.bottom-img-card-container > .bottom-img-container img:nth-child(2) {
   position: absolute;
@@ -10171,7 +10217,12 @@ header .nav-menu .nav .nav-item .nav-link:hover {
   background-color: #00a8e0;
 }
 .content .card-columns .card .card-body.card-logos .testimonial-container {
-  margin-top: 83px;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .content .card-columns .card .card-body.card-logos .testimonial-container {
+    margin-top: 83px;
+  }
 }
 .content .card-columns .card .card-body.card-logos .testimonial-container > .company-logo {
   margin-bottom: 34px;
@@ -10194,8 +10245,6 @@ header .nav-menu .nav .nav-item .nav-link:hover {
   text-transform: uppercase;
 }
 .content .card-columns .card .card-body.card-logos .testimonial-container > a {
-  display: block;
-  margin-bottom: 23px;
   color: #724eef;
 }
 .content .card-columns .card .card-body.card-logos .testimonial-container > a:hover {

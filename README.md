@@ -5,7 +5,7 @@
     - [X] Header
     - [X] Footer
     - [X] Content
-    - [ ] Mobile side nav
+    - [X] Mobile side nav
     - [ ] Looks good responsive
 - [ ] Init Hugo
 - [ ] Deploy to S3 and Cloudfront
