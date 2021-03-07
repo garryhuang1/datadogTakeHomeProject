@@ -4,7 +4,7 @@
 - [ ] Create mockup of design
     - [X] Header
     - [X] Footer
-    - [ ] Content
+    - [X] Content
     - [ ] Mobile side nav
     - [ ] Looks good responsive
 - [ ] Init Hugo

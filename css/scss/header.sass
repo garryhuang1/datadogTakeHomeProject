@@ -4,19 +4,27 @@ header
     display: inline-block
     background-color: $top-nav-bg-color
     position: fixed
+    
     .dd-logo
         padding-left: 1rem
-    > nav 
-        .nav-item
-            &:not(:last-child)
-                text-transform: uppercase
-                font-weight: 600
-            &:last-child
-                margin-top:20px
-            .nav-link
-                color: $top-nav-ft-color
-                &:hover
-                    background-color: $top-nav-bg-hover-color
-                
+
+    .nav-menu
+        display: none
+        @include media-breakpoint-up(md)
+            display: block
+
+        .nav
+            transition: all .5 ease
+            .nav-item
+                &:not(:last-child)
+                    text-transform: uppercase
+                    font-weight: 600
+                &:last-child
+                    margin-top:20px
+                .nav-link
+                    color: $top-nav-ft-color
+                    &:hover
+                        background-color: $top-nav-bg-hover-color
+            
                     
                     

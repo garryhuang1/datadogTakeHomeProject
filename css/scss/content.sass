@@ -9,9 +9,13 @@
             font-weight: 400
         > div
             width: 100%
-            position: absolute
+            // position: absolute
             bottom: 0
             left: 0
+
+            @include media-breakpoint-up(lg)
+                position: absolute
+            
             button
                 width: 100%
                 color: $title-btn-border-color
@@ -31,7 +35,13 @@
         .pricing-detail-container
             position: relative
             &:not(:last-child)
-                border-right: 1px solid $pricing-container-border-color
+                margin-bottom: 20px
+                padding-bottom: 20px
+                border-bottom: 1px solid $pricing-container-border-color
+                @include media-breakpoint-up(sm)
+                    margin-bottom: 0
+                    border-bottom: none
+                    border-right: 1px solid $pricing-container-border-color
             ul
                 margin-bottom: 40px
                 list-style-type: '- '
@@ -43,7 +53,7 @@
                 text-decoration: underline
                 text-underline-offset: 5px
                 position: absolute
-                bottom: 0
+                bottom: 15px
                 &:hover
                     bottom: 3px
             p
@@ -81,26 +91,113 @@
     
     .card-columns
         column-count: 1
-        @include media-breakpoint-only(sm)
+        @include media-breakpoint-up(xl)
             column-count: 2
-        .card-body
-            &.card-logos
-                padding: 0
-                .col-md-4
-                    padding-left: 0
-                .col-4
-                    padding-right: 0
+        .card
+            .card-body
+                background-color: $card-base-bg
+                &.bottom-img-card-container
+                    > .card-title
+                        margin-bottom: 18px
+                        color: $card-link-font
+                        text-transform: uppercase
+                        font-size: 0.75em
+                    > .card-text
+                        margin-bottom: 13px
+                        line-height: 32px
+                        font-size: 1.75em
+                        img 
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                            padding: 10px
+                    > a
+                        display: block
+                        color: $card-link-font
+                        text-decoration: underline
+                        text-decoration-color: $card-link-font
+                        margin-bottom: 97px
+                        font-size: 1.125em
+                    > .bottom-img-container
+                        img:nth-child(2)
+                            position: absolute
+                            right: 0
+                        
+                &.card-logos
+                    padding: 0
+                    .logo-row
+                        height: 184px
+                    .logo-container
+                        height: 184px
+                        position: relative
+                        img
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                        @each $name, $val in $colors
+                            &.logo-#{$name}
+                                background-color: $val
+                    .testimonial-container
+                        margin-top: 83px
+                        > .company-logo
+                            margin-bottom:34px
+                        > .card-text
+                            line-height: 22px
+                        > .testimonial-author
+                            font-size: 0.875em
+                            line-height: 16px
+                            margin-bottom: 18px
+                            p
+                                margin-bottom: 0
+                                &:first-child
+                                    font-weight: 800
+                                &:nth-child(2)
+                                    text-transform: uppercase
+                        > a
+                            display: block
+                            margin-bottom: 23px
+                            color: $card-link-font
+                            &:hover
+                                cursor: pointer
+                                text-decoration: underline
+                    .col-4
+                        padding-left: 0
+                    .col-4
+                        padding-right: 0
+                        height: 100%
+            .card-bg
+                position: absolute
+                height: 100%
+                width: 100%
+                top: 0
+                left: 0
+                mix-blend-mode: multiply
+                &.apm-card
+                        background-color: $card-apm-bg
+                &.log-mgmt-card
+                    background-color: $card-log-mgmt-bg
+                &.infrastructure-card
+                    background-color: $card-infrastructure-bg
 
-        .card-img-overlay
-            width: 100%
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
-            @include media-breakpoint-only(lg)
-                width: 65%
-            .card-title
-                text-transform: uppercase
-                font-size: 0.75em
+            .card-img-overlay
+                width: 100%
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                // mix-blend-mode: multiply
+                @include media-breakpoint-up(lg)
+                    width: 61%
+                a
+                    color: $card-bg-font
+                .card-title
+                    text-transform: uppercase
+                    font-weight: 400
+                    font-size: 0.75em
+                .card-text
+                    font-size: 1.75em
+
 
                 
                     
