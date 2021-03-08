@@ -1,80 +1,67 @@
-<!-- {{ range .Site.Menus.footer }}
-    {{.Name}}
-{{ end }} -->
-<!-- <footer>
-            <div class="container mt-3 pl-5 pr-5">
-                <div class="row">
-                    <div class="col-sm-4 col-center text-center">
-                        <div class="mb-4 mb-sm-0">
-                            <button class="free-trial-btn">FREE TRIAL</button>
-                        </div>
+<footer>
+    <div class="container mt-3 pl-5 pr-5">
+        <div class="row">
+            <div class="col-sm-3 col-center text-center">
+                <div class="mb-4 mb-sm-0">
+                    <button class="free-trial-btn">FREE TRIAL</button>
+                </div>
 
-                        <div class="mt-sm-5 d-none d-sm-block">
-                            © Datadog 2017
+                <div class="mt-sm-5 d-none d-sm-block">
+                    © Datadog 2017
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <span class="h6">Product</span>
+                <div class="footer-nav-links">
+                    <div class="row">
+                        <div class="col-sm-6 pb-0">
+                            <ul class="mb-0">
+                                {{ range first 6 .Site.Menus.product}}
+                                    <li><a href="{{.URL}}">{{.Name}}</a></li>
+                                {{ end }}
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <span class="h6">Product</span>
-                        <div class="footer-nav-links">
-                            <div class="row">
-                                <div class=col-sm-6>
-                                    <ul>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">APM</a></li>
-                                        <li><a href="#">Integrations</a></li>
-                                        <li><a href="#">Alerts</a></li>
-                                        <li><a href="#">API</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                    </ul>
-                                </div>
-                                <div class=col-sm-6>
-                                    <ul>
-                                        <li><a href="#">Documentation</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Resources</a></li>
-                                        <li><a href="#">Security</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <span class="h6">Social</span>
-                                <div class="footer-nav-links">
-                                    <ul>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">Partners</a></li>
-                                        <li><a href="#">Press</a></li>
-                                        <li><a href="#">Our Team</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Legal</a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <span class="h6">About</span>
-                                <div class=footer-nav-links>
-                                    <ul>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Espanol</a></li>
-                                        <li><a href="#">Japanese</a></li>
-                                        <li><a href="#">Instagram</a></li>
-                                        <li><a href="#">Twitter</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="col-sm-6 pt-0">
+                            <ul>
+                                {{ range after 6 .Site.Menus.product }}
+                                    <li><a href="{{.URL}}">{{.Name}}</a></li>
+                                {{ end }}
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mt-sm-5 d-block d-sm-none pl-5">
-                © Datadog 2017
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="h6">About</span>
+                        <div class="footer-nav-links">
+                            <ul>
+                                {{ range .Site.Menus.about}}
+                                    <li><a href="{{.URL}}">{{.Name}}</a></li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <span class="h6">Social</span>
+                        <div class=footer-nav-links>
+                            <ul>
+                                {{ range .Site.Menus.social }}
+                                    <li><a href="{{.URL}}">{{.Name}}</a></li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="terms-links">
-                <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Cookies</a>
-            </div>
+        </div>
+    </div>
+    <div class="mt-sm-5 d-block d-sm-none pl-5">
+        © Datadog 2017
+    </div>
+    <div class="terms-links">
+        <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Cookies</a>
+    </div>
 
-        </footer> -->
+</footer>

@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Pricing - Datadog"
 theme = "datadogTheme"
 
 [menu]
@@ -40,8 +40,111 @@ theme = "datadogTheme"
     url = "#"
     weight = 0
 
-    [[menu.footer]]
+    [[menu.product]]
     identifier = "features"
     name = "Features"
     url = "#"
-    weight = 0
+    weight = 1
+    [[menu.product]]
+    identifier = "apm"
+    name = "APM"
+    url = "#"
+    weight = 2
+    [[menu.product]]
+    identifier = "integrations"
+    name = "Integrations"
+    url = "#"
+    weight = 3
+    [[menu.product]]
+    identifier = "alerts"
+    name = "Alerts"
+    url = "#"
+    weight = 4
+    [[menu.product]]
+    identifier = "api"
+    name = "API"
+    url = "#"
+    weight = 5
+    [[menu.product]]
+    identifier = "pricing"
+    name = "Pricing"
+    url = "#"
+    weight = 6
+    [[menu.product]]
+    identifier = "documentation"
+    name = "Documentation"
+    url = "#"
+    weight = 7
+    [[menu.product]]
+    identifier = "support"
+    name = "Support"
+    url = "#"
+    weight = 8
+    [[menu.product]]
+    identifier = "resources"
+    name = "Resources"
+    url = "#"
+    weight = 9
+    [[menu.product]]
+    identifier = "security"
+    name = "Security"
+    url = "#"
+    weight = 10
+
+    [[menu.about]]
+    identifier = "contact"
+    name = "Contact Us"
+    url = "#"
+    weight = 1
+    [[menu.about]]
+    identifier = "partners"
+    name = "Partners"
+    url = "#"
+    weight = 2
+    [[menu.about]]
+    identifier = "press"
+    name = "Press"
+    url = "#"
+    weight = 3
+    [[menu.about]]
+    identifier = "team"
+    name = "Our Team"
+    url = "#"
+    weight = 4
+    [[menu.about]]
+    identifier = "careers"
+    name = "Careers"
+    url = "#"
+    weight = 5
+    [[menu.about]]
+    identifier = "legal"
+    name = "Legal"
+    url = "#"
+    weight = 6
+
+    [[menu.social]]
+    identifier = "blog"
+    name = "Blog"
+    url = "#"
+    weight = 1
+    [[menu.social]]
+    identifier = "espanol"
+    name = "Espanol"
+    url = "#"
+    weight = 2
+    [[menu.social]]
+    identifier = "japanese"
+    name = "Japanese"
+    url = "#"
+    weight = 3
+    [[menu.social]]
+    identifier = "instagram"
+    name = "Instagram"
+    url = "#"
+    weight = 4
+    [[menu.social]]
+    identifier = "twitter"
+    name = "Twitter"
+    url = "#"
+    weight = 5
+

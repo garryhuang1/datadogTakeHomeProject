@@ -5,5 +5,6 @@ draft: true
 cardType: "background-image"
 backgroundImage: "images/logs-mgmt-bg.png"
 backgroundColor: "#FF635A"
+weight: 2
 ---
 Analyze and explore log data in context

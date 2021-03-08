@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Pricing - Datadog</title>
+    <title>{{.Title}}</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
 </head>
@@ -16,7 +16,7 @@
             <div class="content col-md-9 col-lg-10">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 title-container mb-3 mb-md-0">
+                        <div class="col-lg-4 title-container mb-3 mb-lg-0">
                             <h1>Modern monitoring & analytics</h1>
                             <p>See inside any stack, any app, at any scale, anywhere.</p>
                             <div>
@@ -70,8 +70,7 @@
                         </div>
                     </div>
                     <div class="card-columns">
-                        {{ range .Pages }}
-                            {{ range .Pages }}
+                       {{ range .Site.RegularPages }}
                                 {{ if (eq .Params.cardType "background-image")}}
                                     {{ partial "background-image-card.html" . }}
                                 {{ end }}
@@ -83,17 +82,14 @@
                                 {{ if (eq .Params.cardType "bottom-image-card")}}
                                     {{ partial "bottom-image-card.html" . }}
                                 {{ end }}
-                            {{ end }}
                         {{ end }}
                     </div>
                 </div>
             </div>
         </div>
-
-
-
         {{ partial "footer.html" . }}
     </div>
+    <script src="/js/nav-menu.js" async></script>
 </body>
 
 </html>

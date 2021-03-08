@@ -5,5 +5,6 @@ draft: true
 cardType: "bottom-image-card"
 bottomImage1: "images/home-observability.png"
 bottomImage2: "images/home-dashboards.png"
+weight: 5
 ---
 With turn-key integrations, Datadog seamlessly aggregates metrics and events across the full devops stack
