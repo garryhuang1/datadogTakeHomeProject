@@ -1,7 +1,7 @@
 ---
 title: "Infrastructre"
 date: 2021-03-07T16:32:20-05:00
-draft: true
+draft: false
 cardType: "background-image"
 backgroundImage: "images/infrastructure-bg.png"
 backgroundColor: "#2B2AA7"

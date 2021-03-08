@@ -1,7 +1,7 @@
 ---
 title: "AdRoll"
 date: 2021-03-07T16:32:36-05:00
-draft: true
+draft: false
 companyLogo: "images/adroll-logo-2x.png"
 author: "Valentino Volonghi"
 role: "Chief Technology Officer"

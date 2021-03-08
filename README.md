@@ -24,4 +24,4 @@
     - Images could go through an optimizer to remove any meta data related to the image
     - CSS minimizer/js bundlers
     - Using CDN to serve the images, js, and css
-- If you read through the notes, I would really appreciate any feedback, whether its about the design, code, structure, or just general advice. I really enjoyed working with Hugo and learning how to use it. 
+- If you read through the notes, I would really appreciate any feedback, whether its about the design, code, structure, or just general advice. I really enjoyed working with Hugo and learning how to use it.

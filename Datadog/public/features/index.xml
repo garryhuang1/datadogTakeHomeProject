@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Features on Pricing - Datadog</title>
+    <link>http://example.org/features/</link>
+    <description>Recent content in Features on Pricing - Datadog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Mar 2021 16:32:29 -0500</lastBuildDate><atom:link href="http://example.org/features/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apm</title>
+      <link>http://example.org/features/apm/</link>
+      <pubDate>Sun, 07 Mar 2021 16:31:45 -0500</pubDate>
+      
+      <guid>http://example.org/features/apm/</guid>
+      <description>Get full visibility into modern applications</description>
+    </item>
+    
+    <item>
+      <title>Log Management</title>
+      <link>http://example.org/features/log-management/</link>
+      <pubDate>Sun, 07 Mar 2021 16:31:57 -0500</pubDate>
+      
+      <guid>http://example.org/features/log-management/</guid>
+      <description>Analyze and explore log data in context</description>
+    </item>
+    
+    <item>
+      <title>Infrastructre</title>
+      <link>http://example.org/features/infrastructre/</link>
+      <pubDate>Sun, 07 Mar 2021 16:32:20 -0500</pubDate>
+      
+      <guid>http://example.org/features/infrastructre/</guid>
+      <description>See across systems, apps, and services</description>
+    </item>
+    
+    <item>
+      <title>Observability</title>
+      <link>http://example.org/features/observability/</link>
+      <pubDate>Sun, 07 Mar 2021 16:32:29 -0500</pubDate>
+      
+      <guid>http://example.org/features/observability/</guid>
+      <description>With turn-key integrations, Datadog seamlessly aggregates metrics and events across the full devops stack</description>
+    </item>
+    
+  </channel>
+</rss>

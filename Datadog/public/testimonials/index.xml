@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testimonials on Pricing - Datadog</title>
+    <link>http://example.org/testimonials/</link>
+    <description>Recent content in Testimonials on Pricing - Datadog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Mar 2021 16:32:36 -0500</lastBuildDate><atom:link href="http://example.org/testimonials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AdRoll</title>
+      <link>http://example.org/testimonials/testimonials/</link>
+      <pubDate>Sun, 07 Mar 2021 16:32:36 -0500</pubDate>
+      
+      <guid>http://example.org/testimonials/testimonials/</guid>
+      <description>&amp;ldquo;Datadog has been instrumental in managing our real-time infrastructure, globally distributed in 5 data centers across hundreds of instances, and thousands of different metrics and dimensions for each host. I can&amp;rsquo;t believe there was a time when we didn&amp;rsquo;t have Datadog.&amp;rdquo;</description>
+    </item>
+    
+  </channel>
+</rss>

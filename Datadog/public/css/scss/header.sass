@@ -1,0 +1,44 @@
+@import colors
+
+header
+    display: inline-block
+    background-color: $top-nav-bg-color
+    position: fixed
+    @include media-breakpoint-up(md)
+        padding-top: 40px
+    &.header-container
+        padding-left: 25px
+        @include media-breakpoint-up(md)
+            max-width: 166px
+    
+    .dd-logo
+        padding-left: 1rem
+
+    .nav-menu
+        display: none
+        @include media-breakpoint-up(md)
+            display: block
+            margin-top: 56px
+        .nav
+            transition: all .5 ease
+            .nav-item
+                text-transform: uppercase
+                font-weight: 600
+                @include media-breakpoint-up(md)
+                    margin-bottom: 27px
+                    &:last-child
+                        margin-top:60px
+                        text-transform: none
+                        font-weight:400
+                // &:not(:last-child)
+                //     text-transform: uppercase
+                //     font-weight: 600
+                &:last-child
+                    margin-bottom: 15px
+                .nav-link
+                    color: $top-nav-ft-color
+                    &:hover
+                        background-color: $top-nav-bg-hover-color
+            
+                    
+                    
